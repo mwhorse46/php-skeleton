@@ -32,3 +32,5 @@ git add --all
 git commit -m "Initial setup commit"
 git push origin master
 ```
+
+Continue work on the new project.
