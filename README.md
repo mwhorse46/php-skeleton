@@ -1,6 +1,6 @@
 # skeleton
 
-A starting point for other projects.
+A starting point for other projects. It is compliant with [the PHP-PDS initiative](https://github.com/php-pds/skeleton).
 
 ## Usage
 
