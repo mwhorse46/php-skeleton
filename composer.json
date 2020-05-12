@@ -1,6 +1,6 @@
 {
     "name": "milan-miscevic/skeleton",
-    "description": "A starting point for other projects.",
+    "description": "A starting point for other projects",
     "type": "project",
     "keywords": ["skeleton application", "php project", "skeleton"],
     "license": "MIT",
