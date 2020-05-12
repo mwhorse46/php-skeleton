@@ -1,7 +1,7 @@
 {
     "name": "milan-miscevic/skeleton",
     "description": "A starting point for other projects.",
-    "keywords": ["php", "skeleton"],
+    "keywords": ["skeleton application", "php project", "skeleton"],
     "license": "MIT",
     "require": {
         "php": "^7.4"
@@ -19,5 +19,11 @@
         "psr-4": {
             "SkeletonTest\\": "tests/"
         }
+    },
+    "scripts": {
+        "coverage": "phpunit --coverage-text",
+        "fix": "php-cs-fixer fix",
+        "stan": "phpstan analyse",
+        "test": "phpunit"
     }
 }
