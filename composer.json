@@ -4,6 +4,12 @@
     "type": "project",
     "keywords": ["skeleton application", "php project", "skeleton"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Milan Miščević",
+            "email": "milan.miscevic@gmail.com"
+        }
+    ],
     "require": {
         "php": "^7.4"
     },
@@ -20,6 +26,9 @@
         "psr-4": {
             "SkeletonTest\\": "tests/"
         }
+    },
+    "config": {
+        "sort-packages": true
     },
     "scripts": {
         "coverage": "phpunit --coverage-text",
