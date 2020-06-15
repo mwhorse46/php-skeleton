@@ -2,7 +2,11 @@
     "name": "milan-miscevic/skeleton",
     "description": "A starting point for other projects",
     "type": "project",
-    "keywords": ["skeleton application", "php project", "skeleton"],
+    "keywords": [
+        "skeleton application",
+        "php project",
+        "skeleton"
+    ],
     "license": "MIT",
     "authors": [
         {
