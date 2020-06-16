@@ -20,12 +20,11 @@ git push origin master
 
 Update the composer.json data (fields are below) and the README.md file.
 
-1. name
-2. description
-3. type (if needed)
-4. keywords
-5. autoload (the project namespace)
-6. autoload-dev (the project namespace)
+1. description
+2. type (if needed)
+3. keywords
+4. autoload (the project namespace)
+5. autoload-dev (the project namespace)
 
 Commit & push all.
 
