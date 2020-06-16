@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "milan-miscevic/skeleton-installer": "dev-master"
+        "milan-miscevic/skeleton-installer": "^0.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12",
