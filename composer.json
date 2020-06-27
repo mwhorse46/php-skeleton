@@ -1,6 +1,6 @@
 {
-    "name": "milan-miscevic/skeleton",
-    "description": "A starting point for other projects",
+    "name": "milan-miscevic/php-skeleton",
+    "description": "A starting point for other PHP projects",
     "type": "project",
     "keywords": [
         "skeleton application",
@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "milan-miscevic/skeleton-installer": "^0.1"
+        "milan-miscevic/php-skeleton-installer": "^0.2"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Skeleton\\": "src/"
+            "PhpSkeleton\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SkeletonTest\\": "tests/"
+            "PhpSkeletonTest\\": "tests/"
         }
     },
     "config": {

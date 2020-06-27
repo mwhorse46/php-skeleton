@@ -1,4 +1,4 @@
-# skeleton
+# php-skeleton
 
 [![PDS Skeleton](https://img.shields.io/badge/pds-skeleton-blue.svg?style=flat-square)](https://github.com/php-pds/skeleton)
 
@@ -6,15 +6,15 @@ A starting point for other projects.
 
 ## Installation
 
-Create a new project based on the skeleton project. The PATH placeholder should be replaced with the path or the name of the new project.
+Create a new project based on the PHP skeleton project. The PATH placeholder should be replaced with the path or the name of the new project.
 
 ```bash
-composer create-project milan-miscevic/skeleton PATH
+composer create-project milan-miscevic/php-skeleton PATH
 cd PATH
 git init
 git remote add origin REPOSITORY_URL
 git add --all
-git commit -m "Initial commit (based on the skeleton project)"
+git commit -m "Initial commit (based on the PHP skeleton project)"
 git push origin master
 ```
 

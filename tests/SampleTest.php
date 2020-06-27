@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SkeletonTest;
+namespace PhpSkeletonTest;
 
 use PHPUnit\Framework\TestCase;
 
