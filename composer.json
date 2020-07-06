@@ -37,7 +37,7 @@
     "scripts": {
         "coverage": "phpunit --coverage-text",
         "fix": "php-cs-fixer fix",
-        "stan": "phpstan analyse",
+        "phpstan": "phpstan analyse",
         "test": "phpunit"
     }
 }
