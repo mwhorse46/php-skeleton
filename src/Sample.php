@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Skeleton;
+namespace PhpSkeleton;
 
 class Sample
 {
