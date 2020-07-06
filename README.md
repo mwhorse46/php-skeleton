@@ -4,34 +4,18 @@
 
 A starting point for other projects.
 
-## Installation
+## Usage
 
-Create a new project based on the PHP skeleton project. The PATH placeholder should be replaced with the path or the name of the new project.
-
-```bash
-composer create-project milan-miscevic/php-skeleton PATH
-cd PATH
-git init
-git remote add origin REPOSITORY_URL
-git add --all
-git commit -m "Initial commit (based on the PHP skeleton project)"
-git push origin master
-```
-
-Update the composer.json data (fields are below) and the README.md file.
-
-1. description
-2. type (if needed)
-3. keywords
-4. autoload (the project namespace)
-5. autoload-dev (the project namespace)
-
-Commit & push all.
-
-```bash
-git add --all
-git commit -m "Initial setup commit"
-git push origin master
-```
-
-Continue work on the new project.
+1. Create a new project based on this GitHub template.
+2. Clone the project.
+3. Update the composer.json data.
+    * name
+    * description
+    * type (if needed)
+    * keywords
+    * autoload (the project namespace)
+    * autoload-dev (the project namespace)
+4. Update the README.md file.
+5. Run `composer update`.
+4. Commit & push.
+5. Continue work on the new project.
