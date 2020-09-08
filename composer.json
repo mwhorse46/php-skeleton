@@ -1,7 +1,7 @@
 {
     "name": "milan-miscevic/php-skeleton",
-    "description": "A starting point for other PHP projects",
     "type": "project",
+    "description": "A starting point for other PHP projects",
     "keywords": [
         "skeleton application",
         "php project",
@@ -23,6 +23,9 @@
         "phpunit/phpunit": "^9",
         "vimeo/psalm": "^3"
     },
+    "config": {
+        "sort-packages": true
+    },
     "autoload": {
         "psr-4": {
             "PhpSkeleton\\": "src/"
@@ -32,9 +35,6 @@
         "psr-4": {
             "PhpSkeleton\\Tests\\": "tests/"
         }
-    },
-    "config": {
-        "sort-packages": true
     },
     "scripts": {
         "coverage": "phpunit --coverage-text",
