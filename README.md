@@ -19,3 +19,25 @@ A starting point for other PHP projects.
 1. Run `composer update`.
 1. Commit & push.
 1. Continue work on the new project.
+
+## Composer commands
+
+Unit tests and code coverage:
+
+```bash
+composer test
+composer coverage
+```
+
+Code fixing:
+
+```bash
+composer fix
+```
+
+Static analysis:
+
+```bash
+composer phpstan
+composer psalm
+```
