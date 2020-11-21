@@ -1,5 +1,6 @@
 /.php_cs.cache
 /.phpunit.result.cache
+/.vscode
 /phpstan.neon
 /phpunit.xml
 /vendor
