@@ -8,10 +8,10 @@ A starting point for other PHP projects.
 
 1. Create a new project based on this GitHub template.
 1. Clone the project.
-1. Update the composer.json data.
+1. Update the composer.json data:
     * name
-    * description
     * type (if needed)
+    * description
     * keywords
     * autoload (the project namespace)
     * autoload-dev (the project namespace)
@@ -46,6 +46,6 @@ composer fix
 Static analysis:
 
 ```bash
-composer phpstan
 composer psalm
+composer phpstan
 ```
