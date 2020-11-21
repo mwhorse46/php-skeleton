@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpSkeleton\\": "src/"
+            "Mmm\\PhpSkeleton\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PhpSkeleton\\Tests\\": "tests/"
+            "Mmm\\PhpSkeleton\\Tests\\": "tests/"
         }
     },
     "scripts": {
