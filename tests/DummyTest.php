@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Mmm\PhpSkeleton\Tests;
 
-use Mmm\PhpSkeleton\Sample;
+use Mmm\PhpSkeleton\Dummy;
 use PHPUnit\Framework\TestCase;
 
-class SampleTest extends TestCase
+class DummyTest extends TestCase
 {
     public function testSample(): void
     {
-        $this->assertSame(3, Sample::sum(1, 2));
+        $this->assertSame(3, Dummy::sum(1, 2));
     }
 }

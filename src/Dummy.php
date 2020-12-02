@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Mmm\PhpSkeleton;
 
-class Sample
+class Dummy
 {
     public static function sum(int $a, int $b): int
     {
