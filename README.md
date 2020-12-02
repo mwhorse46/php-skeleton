@@ -40,7 +40,7 @@ composer coverage
 Code fixing:
 
 ```bash
-composer fix
+composer fixer
 ```
 
 Static analysis:

@@ -38,7 +38,7 @@
     },
     "scripts": {
         "coverage": "phpunit --coverage-text",
-        "fix": "php-cs-fixer fix",
+        "fixer": "php-cs-fixer fix",
         "phpstan": "phpstan analyse",
         "psalm": "psalm --show-info=true",
         "test": "phpunit"
