@@ -67,7 +67,7 @@ jobs:
         uses: php-actions/composer@v1
 
       - name: Run static analysis
-        run: vendor/bin/psalm --show-info=true
+        run: vendor/bin/psalm --show-info=true --shepherd
 
   unit:
     name: PHPUnit unit tests
