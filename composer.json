@@ -41,6 +41,6 @@
         "fixer": "php-cs-fixer fix",
         "phpstan": "phpstan analyse",
         "psalm": "psalm --show-info=true",
-        "test": "phpunit"
+        "unit": "phpunit"
     }
 }

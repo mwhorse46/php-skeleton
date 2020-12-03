@@ -33,7 +33,7 @@ composer install
 Unit tests and code coverage:
 
 ```bash
-composer test
+composer unit
 composer coverage
 ```
 
