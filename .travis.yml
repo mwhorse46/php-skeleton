@@ -5,3 +5,17 @@ php:
 
 install:
   - composer install --prefer-dist --no-interaction
+
+jobs:
+  include:
+    - stage: PHP-CS-Fixer coding standards
+      script: vendor/bin/php-cs-fixer fix --dry-run -v
+
+    - stage: PHPStan static analysis
+      script: vendor/bin/phpstan analyse
+
+    - stage: Psalm static analysis
+      script: vendor/bin/psalm --show-info=true --shepherd
+
+    - stage: PHPUnit unit tests
+      script: vendor/bin/phpunit
