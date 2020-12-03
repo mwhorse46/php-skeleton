@@ -1,6 +1,11 @@
 # php-skeleton
 
+[![Software License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PDS Skeleton](https://img.shields.io/badge/pds-skeleton-blue.svg?style=flat-square)](https://github.com/php-pds/skeleton)
+
+[![GitHub Build](https://github.com/milan-miscevic/php-skeleton/workflows/Build/badge.svg?branch=master)](https://github.com/milan-miscevic/php-skeleton/actions)
+[![Travis Build](https://travis-ci.org/milan-miscevic/php-skeleton.svg?branch=master)](https://travis-ci.org/milan-miscevic/php-skeleton)
+[![Type Coverage](https://shepherd.dev/github/milan-miscevic/php-skeleton/coverage.svg)](https://shepherd.dev/github/milan-miscevic/php-skeleton)
 
 A starting point for other PHP projects.
 
