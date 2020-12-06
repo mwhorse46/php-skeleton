@@ -1,7 +1,7 @@
 {
     "name": "milan-miscevic/php-skeleton",
     "type": "project",
-    "description": "A starting point for other PHP projects",
+    "description": "Starting point for other PHP projects",
     "keywords": [
         "skeleton application",
         "php project",

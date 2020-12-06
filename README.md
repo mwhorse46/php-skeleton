@@ -7,7 +7,7 @@
 [![Travis Build](https://travis-ci.org/milan-miscevic/php-skeleton.svg?branch=master)](https://travis-ci.org/milan-miscevic/php-skeleton)
 [![Type Coverage](https://shepherd.dev/github/milan-miscevic/php-skeleton/coverage.svg)](https://shepherd.dev/github/milan-miscevic/php-skeleton)
 
-A starting point for other PHP projects.
+This repository provides a starting point for other PHP projects.
 
 ## Usage
 
