@@ -18,10 +18,10 @@
         "php": "^7.4"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16.7",
-        "phpstan/phpstan": "^0.12.58",
+        "friendsofphp/php-cs-fixer": "^2.17.3",
+        "phpstan/phpstan": "^0.12.67",
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^4.3"
+        "vimeo/psalm": "^4.4.1"
     },
     "config": {
         "sort-packages": true
