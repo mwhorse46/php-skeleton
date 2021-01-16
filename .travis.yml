@@ -5,7 +5,7 @@ php:
   - '8.0'
 
 install:
-  - composer install --prefer-dist --no-interaction
+  - composer update --prefer-dist --no-interaction
 
 jobs:
   include:
