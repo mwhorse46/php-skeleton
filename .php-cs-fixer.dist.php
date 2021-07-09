@@ -5,14 +5,20 @@ $finder = PhpCsFixer\Finder::create()
     ->exclude('vendor')
 ;
 
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config())
     ->setRules([
         '@PSR2' => true,
         'array_indentation' => true,
-        'array_syntax' => ['syntax' => 'short'],
-        'binary_operator_spaces' => ['align_double_arrow' => null],
+        'array_syntax' => true,
+        'binary_operator_spaces' => [
+            'operators' => [
+                '=>' => 'single_space',
+            ]
+        ],
         'blank_line_after_opening_tag' => true,
-        'concat_space' => ['spacing' => 'one'],
+        'concat_space' => [
+            'spacing' => 'one',
+        ],
         'declare_strict_types' => true,
         'include' => true,
         'method_chaining_indentation' => true,
@@ -30,11 +36,15 @@ return PhpCsFixer\Config::create()
         'no_whitespace_in_blank_line' => true,
         'object_operator_without_whitespace' => true,
         'ordered_imports' => true,
-        'phpdoc_line_span' => ['property' => 'single'],
-        'return_type_declaration' => ['space_before' => 'none'],
+        'phpdoc_line_span' => [
+            'property' => 'single',
+        ],
+        'return_type_declaration' => [
+            'space_before' => 'none',
+        ],
         'single_blank_line_before_namespace' => true,
         'ternary_operator_spaces' => true,
-        'trailing_comma_in_multiline_array' => true,
+        'trailing_comma_in_multiline' => true,
     ])
     ->setRiskyAllowed(true)
     ->setFinder($finder)
