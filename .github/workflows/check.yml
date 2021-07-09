@@ -1,4 +1,4 @@
-name: Build
+name: Check
 
 on:
   pull_request:
@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - 7.4
+          - 8.0
 
     steps:
       - name: Install PHP
@@ -42,7 +42,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - 7.4
+          - 8.0
 
     steps:
       - name: Install PHP
@@ -67,7 +67,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - 7.4
+          - 8.0
 
     steps:
       - name: Install PHP
