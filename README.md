@@ -20,7 +20,8 @@ This repository provides a starting point for other PHP projects.
     * autoload (the project namespace)
     * autoload-dev (the project namespace)
 1. Update the README.md file.
-1. Run `composer update`.
+1. Update the first class and test.
+1. Make other needed adjustments.
 1. Commit & push.
 1. Continue work on the new project.
 
