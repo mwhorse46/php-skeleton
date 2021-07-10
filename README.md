@@ -32,24 +32,28 @@ Fetch dependencies with Composer.
 composer install
 ```
 
-## Composer commands
+## Make commands
 
-Unit tests and code coverage:
+Starting and shutting down:
 
 ```bash
-composer unit
-composer coverage
+make up
+make down
 ```
 
-Code fixing:
+Code fixing against the coding standards:
 
 ```bash
-composer fixer
+make fix
 ```
 
-Static analysis:
+Code checking:
 
 ```bash
-composer psalm
-composer phpstan
+make check # includes all commands below
+make coverage
+make phpstan
+make psalm
+make standards
+make unit
 ```
