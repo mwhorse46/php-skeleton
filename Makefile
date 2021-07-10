@@ -11,6 +11,10 @@ down:
 fix:
 	docker-compose -f $(CONFIG) run php80 ./vendor/bin/php-cs-fixer fix
 
+install:
+	docker-compose -f $(CONFIG) build
+	docker-compose -f $(CONFIG) run php80 composer install
+
 phpstan:
 	docker-compose -f $(CONFIG) run php80 ./vendor/bin/phpstan analyse
 

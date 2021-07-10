@@ -24,19 +24,12 @@ This repository provides a starting point for other PHP projects.
 1. Commit & push.
 1. Continue work on the new project.
 
-## Installation
-
-Fetch dependencies with Composer.
-
-```bash
-composer install
-```
-
 ## Make commands
 
-Starting and shutting down:
+Installation, starting and shutting down:
 
 ```bash
+make install
 make up
 make down
 ```
