@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+
+  php74:
+    image: php:7.4-cli
+    volumes:
+      - ..:/app/
+    working_dir: /app
+
+  php80:
+    build: ./php80/
+    volumes:
+      - ../logs:/var/log/xdebug
+      - ..:/app/
+    working_dir: /app
