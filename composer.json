@@ -35,12 +35,5 @@
         "psr-4": {
             "Mmm\\PhpSkeleton\\Tests\\": "tests/"
         }
-    },
-    "scripts": {
-        "coverage": "phpunit --coverage-text",
-        "fixer": "php-cs-fixer fix",
-        "phpstan": "phpstan analyse",
-        "psalm": "psalm --show-info=true",
-        "unit": "phpunit"
     }
 }
