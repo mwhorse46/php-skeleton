@@ -1,7 +1,7 @@
 CONFIG=./docker/docker-compose.yml
 PHP=php80
 
-check: coverage phpstan psalm standards unit
+check: coverage phpstan psalm standards
 
 coverage:
 	docker-compose -f $(CONFIG) run --rm $(PHP) -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
