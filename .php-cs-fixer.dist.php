@@ -1,8 +1,12 @@
 <?php
 
 $finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__ . '/bin') // adapt project only
+    ->in(__DIR__ . '/config') // adapt project only
+    ->in(__DIR__ . '/public') // adapt project only
     ->in(__DIR__ . '/src')
     ->in(__DIR__ . '/tests')
+    ->in(__DIR__ . '/view') // adapt project only
 ;
 
 return (new PhpCsFixer\Config())

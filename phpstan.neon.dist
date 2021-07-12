@@ -1,5 +1,9 @@
 parameters:
     level: max
     paths:
+        - bin # adapt project only
+        - config # adapt project only
+        - public # adapt project only
         - src
         - tests
+        - view # adapt project only
