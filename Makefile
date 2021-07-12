@@ -6,6 +6,7 @@ check: coverage phpstan psalm standards
 coverage:
 	docker-compose -f $(CONFIG) run --rm $(PHP) -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
 
+# adapt project only
 down:
 	docker-compose -f $(CONFIG) down --remove-orphans
 
@@ -25,10 +26,12 @@ psalm:
 standards:
 	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix --dry-run -v
 
+# adapt
 unit:
 	docker-compose -f $(CONFIG) run --rm php74 ./vendor/bin/phpunit
 	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/phpunit
 	docker-compose -f $(CONFIG) run --rm php81 ./vendor/bin/phpunit
 
+# adapt project only
 up:
 	docker-compose -f $(CONFIG) up -d

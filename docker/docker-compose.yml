@@ -2,6 +2,29 @@ version: "3.9"
 
 services:
 
+# adapt project only
+
+  nginx:
+    depends_on:
+      - php
+    image: nginx:1
+    ports:
+      - 80:80
+    volumes:
+      - ..:/app
+      - ../logs:/var/log/nginx
+      - ./nginx/app.mmm.conf:/etc/nginx/conf.d/app.mmm.conf
+    working_dir: /app
+
+  php:
+    build: ./php/
+    volumes:
+      - ../logs:/var/log/xdebug
+      - ..:/app
+    working_dir: /app
+
+# adapt library only
+
   php74:
     image: php:7.4-cli
     volumes:
