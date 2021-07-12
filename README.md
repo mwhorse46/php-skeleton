@@ -27,10 +27,15 @@ This repository provides a starting point for other PHP projects.
 
 ## Make commands
 
-Installation, starting and shutting down:
+Installation:
 
 ```bash
 make install
+```
+
+Starting and shutting down (adapt project only):
+
+```bash
 make up
 make down
 ```
@@ -44,7 +49,7 @@ make fix
 Code checking:
 
 ```bash
-make check # includes all commands below
+make check # includes all commands below except unit
 make coverage
 make phpstan
 make psalm
