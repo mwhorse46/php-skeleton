@@ -28,6 +28,7 @@ standards:
 unit:
 	docker-compose -f $(CONFIG) run --rm php74 ./vendor/bin/phpunit
 	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/phpunit
+	docker-compose -f $(CONFIG) run --rm php81 ./vendor/bin/phpunit
 
 up:
 	docker-compose -f $(CONFIG) up -d
