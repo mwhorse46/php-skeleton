@@ -1,5 +1,6 @@
 CONFIG=./docker/docker-compose.yml
-PHP=php80
+# adapt
+PHP=php
 
 check: coverage phpstan psalm standards
 
