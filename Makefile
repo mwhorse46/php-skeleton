@@ -1,6 +1,6 @@
 CONFIG=./docker/docker-compose.yml
 # adapt
-PHP=php
+PHP=php80-fpm
 
 check: coverage phpstan psalm standards unit
 
@@ -29,9 +29,9 @@ standards:
 
 # adapt
 unit:
-	docker-compose -f $(CONFIG) run --rm php74 ./vendor/bin/phpunit
+	docker-compose -f $(CONFIG) run --rm php74-cli ./vendor/bin/phpunit
 	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/phpunit
-	docker-compose -f $(CONFIG) run --rm php81 ./vendor/bin/phpunit
+	docker-compose -f $(CONFIG) run --rm php81-cli ./vendor/bin/phpunit
 
 # adapt project only
 up:
