@@ -5,7 +5,7 @@ PHP=php
 check: coverage phpstan psalm standards unit
 
 coverage:
-	docker-compose -f $(CONFIG) run --rm $(PHP) -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
+	docker-compose -f $(CONFIG) run --rm $(PHP) php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
 
 # adapt project only
 down:
