@@ -21,7 +21,7 @@
         "friendsofphp/php-cs-fixer": "^3.0.0",
         "phpstan/phpstan": "^1.0.0",
         "phpunit/phpunit": "^9.5.7",
-        "vimeo/psalm": "^4.8.1"
+        "vimeo/psalm": "^4.14.0"
     },
     "config": {
         "sort-packages": true
