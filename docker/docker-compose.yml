@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
 
-# adapt project only
+# #todo remove this section in library
 
   nginx:
     depends_on:
@@ -23,7 +23,7 @@ services:
       - ..:/app
     working_dir: /app
 
-# adapt library only
+# #todo remove this section in project
 
   php74-cli:
     image: php:7.4-cli

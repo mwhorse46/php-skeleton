@@ -1,11 +1,11 @@
 DOCKER=docker-compose -f ./docker/docker-compose.yml
-# adapt
+# #todo change to cli in library
 PHP=php81-fpm
 
 coverage:
 	$(DOCKER) run --rm $(PHP) php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
 
-# adapt project only
+# #todo remove this rule in library
 down:
 	$(DOCKER) down --remove-orphans
 
@@ -27,12 +27,12 @@ standards:
 
 test: standards phpstan psalm coverage
 
-# adapt
+# #todo remove unused commands in project
 unit:
 	$(DOCKER) run --rm php74-cli ./vendor/bin/phpunit
 	$(DOCKER) run --rm php80-cli ./vendor/bin/phpunit
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpunit
 
-# adapt project only
+# #todo remove this rule in library
 up:
 	$(DOCKER) up -d

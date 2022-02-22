@@ -7,12 +7,12 @@
     xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
 >
     <projectFiles>
-        <directory name="bin" /><!--adapt project only-->
-        <directory name="config" /><!--adapt project only-->
-        <directory name="public" /><!--adapt project only-->
+        <directory name="bin" /><!-- #todo remove this line in library -->
+        <directory name="config" /><!-- #todo remove this line in library -->
+        <directory name="public" /><!-- #todo remove this line in library -->
         <directory name="src" />
         <directory name="tests" />
-        <directory name="view" /><!--adapt project only-->
+        <directory name="view" /><!-- #todo remove this line in library -->
         <ignoreFiles>
             <directory name="vendor" />
         </ignoreFiles>
