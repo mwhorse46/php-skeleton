@@ -49,7 +49,7 @@ make fix
 Code checking:
 
 ```bash
-make check # includes all commands below
+make test # includes coverage phpstan psalm and standards
 make coverage
 make phpstan
 make psalm

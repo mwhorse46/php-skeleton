@@ -1,38 +1,38 @@
-CONFIG=./docker/docker-compose.yml
+DOCKER=docker-compose -f ./docker/docker-compose.yml
 # adapt
 PHP=php80-fpm
 
-check: coverage phpstan psalm standards unit
-
 coverage:
-	docker-compose -f $(CONFIG) run --rm $(PHP) php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
+	$(DOCKER) run --rm $(PHP) php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
 
 # adapt project only
 down:
-	docker-compose -f $(CONFIG) down --remove-orphans
+	$(DOCKER) down --remove-orphans
 
 fix:
-	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix
+	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix
 
 install:
-	docker-compose -f $(CONFIG) build
-	docker-compose -f $(CONFIG) run --rm $(PHP) composer install
+	$(DOCKER) build
+	$(DOCKER) run --rm $(PHP) composer install
 
 phpstan:
-	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/phpstan analyse
+	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpstan analyse
 
 psalm:
-	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/psalm --show-info=true
+	$(DOCKER) run --rm $(PHP) ./vendor/bin/psalm --show-info=true
 
 standards:
-	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix --dry-run -v
+	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix --dry-run -v
+
+test: standards phpstan psalm coverage
 
 # adapt
 unit:
-	docker-compose -f $(CONFIG) run --rm php74-cli ./vendor/bin/phpunit
-	docker-compose -f $(CONFIG) run --rm $(PHP) ./vendor/bin/phpunit
-	docker-compose -f $(CONFIG) run --rm php81-cli ./vendor/bin/phpunit
+	$(DOCKER) run --rm php74-cli ./vendor/bin/phpunit
+	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpunit
+	$(DOCKER) run --rm php81-cli ./vendor/bin/phpunit
 
 # adapt project only
 up:
-	docker-compose -f $(CONFIG) up -d
+	$(DOCKER) up -d
