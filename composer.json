@@ -3,9 +3,12 @@
     "type": "project",
     "description": "Starting point for other PHP projects",
     "keywords": [
-        "skeleton application",
         "php project",
-        "skeleton"
+        "php template",
+        "skeleton",
+        "skeleton application",
+        "template",
+        "template application"
     ],
     "license": "MIT",
     "authors": [
