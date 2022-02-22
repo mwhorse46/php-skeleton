@@ -8,7 +8,7 @@
 
 This repository provides a starting point for other PHP projects.
 
-## Usage
+## Installation
 
 1. Create a new project based on this GitHub template.
 1. Clone the project.
@@ -25,34 +25,6 @@ This repository provides a starting point for other PHP projects.
 1. Commit & push.
 1. Continue work on the new project.
 
-## Make commands
+## Usage
 
-Installation:
-
-```bash
-make install
-```
-
-Starting and shutting down (adapt project only):
-
-```bash
-make up
-make down
-```
-
-Code fixing against the coding standards:
-
-```bash
-make fix
-```
-
-Code checking:
-
-```bash
-make test # includes coverage phpstan psalm and standards
-make coverage
-make phpstan
-make psalm
-make standards
-make unit
-```
+For available commands check [Makefile](Makefile).
