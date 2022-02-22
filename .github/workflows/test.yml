@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - 8.0
+          - 8.1
 
     steps:
       - name: Install PHP
@@ -42,7 +42,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - 8.0
+          - 8.1
 
     steps:
       - name: Install PHP
@@ -67,7 +67,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - 8.0
+          - 8.1
 
     steps:
       - name: Install PHP
@@ -94,6 +94,7 @@ jobs:
         php-version:
           - 7.4
           - 8.0
+          - 8.1
 
     steps:
       - name: Install PHP

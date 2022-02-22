@@ -6,7 +6,7 @@ services:
 
   nginx:
     depends_on:
-      - php80-fpm
+      - php81-fpm
     image: nginx:1
     ports:
       - 80:80
@@ -16,8 +16,8 @@ services:
       - ./nginx/app.mmm.conf:/etc/nginx/conf.d/app.mmm.conf
     working_dir: /app
 
-  php80-fpm:
-    build: ./php80-fpm/
+  php81-fpm:
+    build: ./php81-fpm/
     volumes:
       - ../logs:/var/log/xdebug
       - ..:/app
@@ -32,13 +32,13 @@ services:
     working_dir: /app
 
   php80-cli:
-    build: ./php80-cli/
+    image: php:8.0-cli
     volumes:
       - ..:/app/
     working_dir: /app
 
   php81-cli:
-    image: php:8.1-rc-cli
+    build: ./php81-cli/
     volumes:
       - ..:/app/
     working_dir: /app

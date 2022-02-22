@@ -1,6 +1,6 @@
 DOCKER=docker-compose -f ./docker/docker-compose.yml
 # adapt
-PHP=php80-fpm
+PHP=php81-fpm
 
 coverage:
 	$(DOCKER) run --rm $(PHP) php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
@@ -30,8 +30,8 @@ test: standards phpstan psalm coverage
 # adapt
 unit:
 	$(DOCKER) run --rm php74-cli ./vendor/bin/phpunit
+	$(DOCKER) run --rm php80-cli ./vendor/bin/phpunit
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpunit
-	$(DOCKER) run --rm php81-cli ./vendor/bin/phpunit
 
 # adapt project only
 up:
