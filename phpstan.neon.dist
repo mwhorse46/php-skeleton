@@ -4,9 +4,9 @@ includes:
 parameters:
     level: max
     paths:
-        - bin # #todo remove this line in library
-        - config # #todo remove this line in library
-        - public # #todo remove this line in library
+        - bin # #todo remove this folder in library
+        - config # #todo remove this folder in library
+        - public # #todo remove this folder in library
         - src
         - tests
-        - view # #todo remove this line in library
+        - view # #todo remove this folder in library
