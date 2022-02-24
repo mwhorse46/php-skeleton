@@ -12,7 +12,7 @@ This repository provides a starting point for other PHP projects.
 
 1. Create a new project based on this GitHub template.
 1. Clone the project.
-1. Update the composer.json data:
+1. Update the `composer.json` data:
     * `name`
     * `type` (in library)
     * `description`
@@ -21,7 +21,7 @@ This repository provides a starting point for other PHP projects.
     * `autoload.psr-4` (the project namespace)
     * `autoload-dev.psr-4` (the project namespace)
 1. Search for the `#todo` tag and make changes.
-1. Update the README.md file.
+1. Update the `README.md` file.
 1. Make other needed adjustments.
 1. Commit & push.
 1. Continue work on the new project.
