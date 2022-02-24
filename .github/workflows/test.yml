@@ -11,7 +11,6 @@ on:
 jobs:
   phpstan:
     name: PHPStan static analysis
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,23 +19,15 @@ jobs:
           - 8.1
 
     steps:
-      - name: Install PHP
-        uses: shivammathur/setup-php@2.9.0
+      - uses: shivammathur/setup-php@2.9.0
         with:
           php-version: "${{ matrix.php-version }}"
-
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Install the composer dependencies
-        uses: php-actions/composer@v1
-
-      - name: Run static analysis
-        run: vendor/bin/phpstan analyse
+      - uses: actions/checkout@v2
+      - uses: php-actions/composer@v1
+      - run: vendor/bin/phpstan analyse
 
   psalm:
     name: Psalm static analysis
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -45,23 +36,15 @@ jobs:
           - 8.1
 
     steps:
-      - name: Install PHP
-        uses: shivammathur/setup-php@2.9.0
+      - uses: shivammathur/setup-php@2.9.0
         with:
           php-version: "${{ matrix.php-version }}"
-
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Install the composer dependencies
-        uses: php-actions/composer@v1
-
-      - name: Run static analysis
-        run: vendor/bin/psalm --show-info=true --shepherd
+      - uses: actions/checkout@v2
+      - uses: php-actions/composer@v1
+      - run: vendor/bin/psalm --show-info=true --shepherd
 
   standards:
     name: PHP-CS-Fixer coding standards
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -70,23 +53,15 @@ jobs:
           - 8.1
 
     steps:
-      - name: Install PHP
-        uses: shivammathur/setup-php@2.9.0
+      - uses: shivammathur/setup-php@2.9.0
         with:
           php-version: "${{ matrix.php-version }}"
-
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Install the composer dependencies
-        uses: php-actions/composer@v1
-
-      - name: Check the coding standards
-        run: vendor/bin/php-cs-fixer fix --dry-run -v
+      - uses: actions/checkout@v2
+      - uses: php-actions/composer@v1
+      - run: vendor/bin/php-cs-fixer fix --dry-run -v
 
   unit:
     name: PHPUnit unit tests
-
     runs-on: ubuntu-latest
 
 # #todo remove unused versions in project
@@ -98,16 +73,9 @@ jobs:
           - 8.1
 
     steps:
-      - name: Install PHP
-        uses: shivammathur/setup-php@2.9.0
+      - uses: shivammathur/setup-php@2.9.0
         with:
           php-version: "${{ matrix.php-version }}"
-
-      - name: Checkout the code
-        uses: actions/checkout@v2
-
-      - name: Install the composer dependencies
-        uses: php-actions/composer@v1
-
-      - name: Run the unit tests
-        run: vendor/bin/phpunit
+      - uses: actions/checkout@v2
+      - uses: php-actions/composer@v1
+      - run: vendor/bin/phpunit
