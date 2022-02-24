@@ -19,8 +19,8 @@ services:
   php81-fpm:
     build: ./php81-fpm/
     volumes:
-      - ../logs:/var/log/xdebug
       - ..:/app
+      - ../logs:/var/log/xdebug
     working_dir: /app
 
 # #todo remove this section in project
@@ -40,5 +40,6 @@ services:
   php81-cli:
     build: ./php81-cli/
     volumes:
-      - ..:/app/
+      - ..:/app
+      - ../logs:/var/log/xdebug
     working_dir: /app
