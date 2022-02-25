@@ -6,6 +6,7 @@ parameters:
     paths:
         - bin # #todo remove this folder in library
         - config # #todo remove this folder in library
+        - data # #todo remove this folder in library
         - public # #todo remove this folder in library
         - src
         - tests

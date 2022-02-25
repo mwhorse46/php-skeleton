@@ -9,6 +9,7 @@
     <projectFiles>
         <directory name="bin" /><!-- #todo remove this folder in library -->
         <directory name="config" /><!-- #todo remove this folder in library -->
+        <directory name="data" /><!-- #todo remove this folder in library -->
         <directory name="public" /><!-- #todo remove this folder in library -->
         <directory name="src" />
         <directory name="tests" />

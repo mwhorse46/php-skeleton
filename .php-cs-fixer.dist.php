@@ -3,6 +3,7 @@
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__ . '/bin') // #todo remove this folder in library
     ->in(__DIR__ . '/config') // #todo remove this folder in library
+    ->in(__DIR__ . '/data') // #todo remove this folder in library
     ->in(__DIR__ . '/public') // #todo remove this folder in library
     ->in(__DIR__ . '/src')
     ->in(__DIR__ . '/tests')
