@@ -1,13 +1,14 @@
 <?php
 
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__ . '/bin') // #todo remove this folder in library
-    ->in(__DIR__ . '/config') // #todo remove this folder in library
-    ->in(__DIR__ . '/data') // #todo remove this folder in library
-    ->in(__DIR__ . '/public') // #todo remove this folder in library
+    // #todo remove unnecessary folders
+    ->in(__DIR__ . '/bin')
+    ->in(__DIR__ . '/config')
+    ->in(__DIR__ . '/data')
+    ->in(__DIR__ . '/public')
     ->in(__DIR__ . '/src')
     ->in(__DIR__ . '/tests')
-    ->in(__DIR__ . '/view') // #todo remove this folder in library
+    ->in(__DIR__ . '/view')
 ;
 
 return (new PhpCsFixer\Config())

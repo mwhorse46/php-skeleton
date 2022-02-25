@@ -20,6 +20,7 @@ This repository provides a starting point for other PHP projects.
     * `require.php` (in project)
     * `autoload.psr-4` (the project namespace)
     * `autoload-dev.psr-4` (the project namespace)
+1. Remove unnecessary folders.
 1. Search for the `#todo` tag and make changes.
 1. Update the `README.md` file.
 1. Make other needed adjustments.

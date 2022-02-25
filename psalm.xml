@@ -7,13 +7,14 @@
     xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
 >
     <projectFiles>
-        <directory name="bin" /><!-- #todo remove this folder in library -->
-        <directory name="config" /><!-- #todo remove this folder in library -->
-        <directory name="data" /><!-- #todo remove this folder in library -->
-        <directory name="public" /><!-- #todo remove this folder in library -->
+        <!-- #todo remove unnecessary folders -->
+        <directory name="bin" />
+        <directory name="config" />
+        <directory name="data" />
+        <directory name="public" />
         <directory name="src" />
         <directory name="tests" />
-        <directory name="view" /><!-- #todo remove this folder in library -->
+        <directory name="view" />
         <ignoreFiles>
             <directory name="vendor" />
         </ignoreFiles>

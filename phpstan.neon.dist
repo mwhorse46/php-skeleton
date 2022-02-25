@@ -4,10 +4,11 @@ includes:
 parameters:
     level: max
     paths:
-        - bin # #todo remove this folder in library
-        - config # #todo remove this folder in library
-        - data # #todo remove this folder in library
-        - public # #todo remove this folder in library
+        # #todo remove unnecessary folders
+        - bin
+        - config
+        - data
+        - public
         - src
         - tests
-        - view # #todo remove this folder in library
+        - view
