@@ -21,7 +21,7 @@
         "php": "^7.4 || ^8"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.3.2",
+        "friendsofphp/php-cs-fixer": "^3.7.0",
         "phpstan/phpstan": "^1.2.0",
         "phpunit/phpunit": "^9.5.18",
         "vimeo/psalm": "^4.14.0"
