@@ -1,11 +1,11 @@
 DOCKER=docker-compose -f ./docker/docker-compose.yml
-# #todo change to cli in library
+# #todo change to cli if needed
 PHP=php81-fpm
 
 coverage:
 	$(DOCKER) run --rm $(PHP) php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
 
-# #todo remove this rule in library
+# #todo remove this rule if not needed
 down:
 	$(DOCKER) down --remove-orphans
 
@@ -33,6 +33,6 @@ unit:
 	$(DOCKER) run --rm php80-cli ./vendor/bin/phpunit
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpunit
 
-# #todo remove this rule in library
+# #todo remove this rule if not needed
 up:
 	$(DOCKER) up -d
