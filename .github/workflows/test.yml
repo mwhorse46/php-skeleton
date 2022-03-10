@@ -3,79 +3,79 @@ name: "Test"
 on:
   pull_request:
     branches:
-      - master
+      - "master"
   push:
     branches:
-      - master
+      - "master"
 
 jobs:
   phpstan:
-    name: PHPStan static analysis
-    runs-on: ubuntu-latest
+    name: "PHPStan static analysis"
+    runs-on: "ubuntu-latest"
 
     strategy:
       matrix:
         php-version:
-          - 8.1
+          - "8.1"
 
     steps:
-      - uses: shivammathur/setup-php@2.9.0
+      - uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-version }}"
-      - uses: actions/checkout@v2
-      - uses: php-actions/composer@v1
-      - run: vendor/bin/phpstan analyse
+      - uses: "actions/checkout@v2"
+      - uses: "php-actions/composer@v1"
+      - run: "vendor/bin/phpstan analyse"
 
   psalm:
-    name: Psalm static analysis
-    runs-on: ubuntu-latest
+    name: "Psalm static analysis"
+    runs-on: "ubuntu-latest"
 
     strategy:
       matrix:
         php-version:
-          - 8.1
+          - "8.1"
 
     steps:
-      - uses: shivammathur/setup-php@2.9.0
+      - uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-version }}"
-      - uses: actions/checkout@v2
-      - uses: php-actions/composer@v1
-      - run: vendor/bin/psalm --show-info=true --shepherd # #todo remove --shepherd in private
+      - uses: "actions/checkout@v2"
+      - uses: "php-actions/composer@v1"
+      - run: "vendor/bin/psalm --show-info=true --shepherd" # #todo remove --shepherd in private
 
   standards:
-    name: PHP-CS-Fixer coding standards
-    runs-on: ubuntu-latest
+    name: "PHP-CS-Fixer coding standards"
+    runs-on: "ubuntu-latest"
 
     strategy:
       matrix:
         php-version:
-          - 8.1
+          - "8.1"
 
     steps:
-      - uses: shivammathur/setup-php@2.9.0
+      - uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-version }}"
-      - uses: actions/checkout@v2
-      - uses: php-actions/composer@v1
-      - run: vendor/bin/php-cs-fixer fix --dry-run -v
+      - uses: "actions/checkout@v2"
+      - uses: "php-actions/composer@v1"
+      - run: "vendor/bin/php-cs-fixer fix --dry-run -v"
 
   unit:
-    name: PHPUnit unit tests
-    runs-on: ubuntu-latest
+    name: "PHPUnit unit tests"
+    runs-on: "ubuntu-latest"
 
 # #todo remove unused versions in project
     strategy:
       matrix:
         php-version:
-          - 7.4
-          - 8.0
-          - 8.1
+          - "7.4"
+          - "8.0"
+          - "8.1"
 
     steps:
-      - uses: shivammathur/setup-php@2.9.0
+      - uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-version }}"
-      - uses: actions/checkout@v2
-      - uses: php-actions/composer@v1
-      - run: vendor/bin/phpunit
+      - uses: "actions/checkout@v2"
+      - uses: "php-actions/composer@v1"
+      - run: "vendor/bin/phpunit"
