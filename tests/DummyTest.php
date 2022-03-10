@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mmm\PhpSkeleton\Tests;
+namespace Mmm\PhpSkeleton\Tests; // #todo change namespace
 
 use Mmm\PhpSkeleton\Dummy;
 use PHPUnit\Framework\TestCase;

@@ -1,12 +1,14 @@
 <?php
 
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__ . '/bin') // adapt project only
-    ->in(__DIR__ . '/config') // adapt project only
-    ->in(__DIR__ . '/public') // adapt project only
+    // #todo remove unnecessary folders
+    ->in(__DIR__ . '/bin')
+    ->in(__DIR__ . '/config')
+    ->in(__DIR__ . '/data')
+    ->in(__DIR__ . '/public')
     ->in(__DIR__ . '/src')
     ->in(__DIR__ . '/tests')
-    ->in(__DIR__ . '/view') // adapt project only
+    ->in(__DIR__ . '/view')
 ;
 
 return (new PhpCsFixer\Config())

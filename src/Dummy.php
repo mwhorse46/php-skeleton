@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mmm\PhpSkeleton;
+namespace Mmm\PhpSkeleton; // #todo change namespace
 
 class Dummy
 {

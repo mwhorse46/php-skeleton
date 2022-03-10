@@ -4,9 +4,11 @@ includes:
 parameters:
     level: max
     paths:
-        - bin # adapt project only
-        - config # adapt project only
-        - public # adapt project only
+        # #todo remove unnecessary folders
+        - bin
+        - config
+        - data
+        - public
         - src
         - tests
-        - view # adapt project only
+        - view

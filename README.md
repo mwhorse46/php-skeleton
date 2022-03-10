@@ -8,51 +8,25 @@
 
 This repository provides a starting point for other PHP projects.
 
-## Usage
+## Installation
 
 1. Create a new project based on this GitHub template.
 1. Clone the project.
-1. Update the composer.json data:
-    * name
-    * type (if needed)
-    * description
-    * keywords
-    * autoload (the project namespace)
-    * autoload-dev (the project namespace)
-1. Update the README.md file.
-1. Update the first class and test.
+1. Update the `composer.json` data:
+    * `name`
+    * `type` (in library)
+    * `description`
+    * `keywords`
+    * `require.php` (in project)
+    * `autoload.psr-4` (the project namespace)
+    * `autoload-dev.psr-4` (the project namespace)
+1. Remove unnecessary folders.
+1. Search for the `#todo` tag and make changes.
+1. Update the `README.md` file.
 1. Make other needed adjustments.
 1. Commit & push.
 1. Continue work on the new project.
 
-## Make commands
+## Usage
 
-Installation:
-
-```bash
-make install
-```
-
-Starting and shutting down (adapt project only):
-
-```bash
-make up
-make down
-```
-
-Code fixing against the coding standards:
-
-```bash
-make fix
-```
-
-Code checking:
-
-```bash
-make check # includes all commands below
-make coverage
-make phpstan
-make psalm
-make standards
-make unit
-```
+For available commands check [Makefile](Makefile).
