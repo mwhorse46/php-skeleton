@@ -16,6 +16,9 @@ install:
 	$(DOCKER) build
 	$(DOCKER) run --rm $(PHP) composer install
 
+mutation:
+	$(DOCKER) run --rm $(PHP) ./vendor/bin/infection --min-msi=80
+
 phpstan:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpstan analyse
 

@@ -1,0 +1,13 @@
+{
+    "source": {
+        "directories": ["src"]
+    },
+    "logs": {
+        "text": "./logs/infection.log"
+    },
+    "tmpDir": "/app/logs",
+    "mutators": {
+        "@default": true
+    },
+    "initialTestsPhpOptions": "-d xdebug.mode=coverage"
+}
