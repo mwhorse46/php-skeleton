@@ -26,6 +26,11 @@ return (new PhpCsFixer\Config())
             'spacing' => 'one',
         ],
         'declare_strict_types' => true,
+        'general_phpdoc_annotation_remove' => [
+            'annotations' => [
+                'author',
+            ],
+        ],
         'include' => true,
         'method_chaining_indentation' => true,
         'modernize_types_casting' => true,
@@ -37,6 +42,9 @@ return (new PhpCsFixer\Config())
         'no_leading_import_slash' => true,
         'no_leading_namespace_whitespace' => true,
         'no_singleline_whitespace_before_semicolons' => true,
+        'no_superfluous_phpdoc_tags' => [
+            'remove_inheritdoc' => true,
+        ],
         'no_trailing_comma_in_singleline_array' => true,
         'no_unused_imports' => true,
         'no_whitespace_in_blank_line' => true,
