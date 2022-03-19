@@ -24,6 +24,7 @@
         "friendsofphp/php-cs-fixer": "^3.7.0",
         "infection/infection": "^0.26.6",
         "phpstan/phpstan": "^1.4.9",
+        "phpstan/phpstan-strict-rules": "^1.1",
         "phpunit/phpunit": "^9.5.18",
         "vimeo/psalm": "^4.22.0"
     },
