@@ -28,7 +28,7 @@ psalm:
 standards:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix --dry-run -v
 
-test: standards phpstan psalm unit
+test: standards unit phpstan psalm mutation
 
 # #todo remove unused commands in project
 unit:

@@ -5,7 +5,7 @@
     "logs": {
         "text": "./logs/infection.log"
     },
-    "tmpDir": "/app/logs",
+    "tmpDir": "./logs",
     "mutators": {
         "@default": true
     },
