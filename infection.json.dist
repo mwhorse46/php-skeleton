@@ -3,7 +3,10 @@
         "directories": ["src"]
     },
     "logs": {
-        "text": "./logs/infection.log"
+        "text": "./logs/infection.log",
+        "stryker": {
+            "report": "master"
+        }
     },
     "tmpDir": "./logs",
     "mutators": {
