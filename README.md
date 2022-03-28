@@ -4,6 +4,7 @@
 [![PDS Skeleton](https://img.shields.io/badge/pds-skeleton-blue.svg?style=flat-square)](https://github.com/php-pds/skeleton)
 
 [![GitHub Build](https://github.com/milan-miscevic/php-skeleton/workflows/Test/badge.svg?branch=master)](https://github.com/milan-miscevic/php-skeleton/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=milan-miscevic_php-skeleton&metric=alert_status)](https://sonarcloud.io/dashboard?id=milan-miscevic_php-skeleton)
 [![Type Coverage](https://shepherd.dev/github/milan-miscevic/php-skeleton/coverage.svg)](https://shepherd.dev/github/milan-miscevic/php-skeleton)
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fmilan-miscevic%2Fphp-skeleton%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/milan-miscevic/php-skeleton/master)
 
