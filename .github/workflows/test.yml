@@ -24,7 +24,9 @@ jobs:
           php-version: "${{ matrix.php-version }}"
       - uses: "actions/checkout@v2"
       - uses: "php-actions/composer@v1"
-      - run: "vendor/bin/infection --min-msi=80"
+      - env:
+          INFECTION_DASHBOARD_API_KEY: ${{ secrets.INFECTION_DASHBOARD_API_KEY }}
+        run: "vendor/bin/infection --min-msi=80"
 
   phpstan:
     name: "PHPStan static analysis"
