@@ -16,6 +16,9 @@ install:
 	$(DOCKER) build
 	$(DOCKER) run --rm $(PHP) composer install
 
+mutation:
+	$(DOCKER) run --rm $(PHP) ./vendor/bin/infection --min-msi=80
+
 phpstan:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpstan analyse
 
@@ -25,7 +28,7 @@ psalm:
 standards:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix --dry-run -v
 
-test: standards phpstan psalm coverage
+test: standards unit phpstan psalm mutation
 
 # #todo remove unused commands in project
 unit:

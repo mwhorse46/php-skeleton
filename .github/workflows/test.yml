@@ -9,6 +9,25 @@ on:
       - "master"
 
 jobs:
+  mutation:
+    name: "Infection mutation testing"
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "8.1"
+
+    steps:
+      - uses: "shivammathur/setup-php@2.9.0"
+        with:
+          php-version: "${{ matrix.php-version }}"
+      - uses: "actions/checkout@v2"
+      - uses: "php-actions/composer@v1"
+      - env:
+          INFECTION_DASHBOARD_API_KEY: ${{ secrets.INFECTION_DASHBOARD_API_KEY }}
+        run: "vendor/bin/infection --min-msi=80"
+
   phpstan:
     name: "PHPStan static analysis"
     runs-on: "ubuntu-latest"

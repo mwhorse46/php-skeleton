@@ -1,7 +1,8 @@
 {
     "name": "milan-miscevic/php-skeleton",
-    "type": "project",
     "description": "Starting point for other PHP projects",
+    "license": "MIT",
+    "type": "project",
     "keywords": [
         "php project",
         "php template",
@@ -10,7 +11,6 @@
         "template",
         "template application"
     ],
-    "license": "MIT",
     "authors": [
         {
             "name": "Milan Miščević",
@@ -22,12 +22,11 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.7.0",
+        "infection/infection": "^0.26.6",
         "phpstan/phpstan": "^1.4.9",
+        "phpstan/phpstan-strict-rules": "^1.1",
         "phpunit/phpunit": "^9.5.18",
         "vimeo/psalm": "^4.22.0"
-    },
-    "config": {
-        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
@@ -38,5 +37,9 @@
         "psr-4": {
             "Mmm\\PhpSkeleton\\Tests\\": "tests/"
         }
+    },
+    "config": {
+        "allow-plugins": {},
+        "sort-packages": true
     }
 }
