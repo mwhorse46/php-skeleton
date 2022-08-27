@@ -39,7 +39,9 @@
         }
     },
     "config": {
-        "allow-plugins": {},
+        "allow-plugins": {
+            "infection/extension-installer": false
+        },
         "sort-packages": true
     }
 }
