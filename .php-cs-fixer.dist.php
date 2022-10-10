@@ -45,7 +45,7 @@ return (new PhpCsFixer\Config())
         'no_superfluous_phpdoc_tags' => [
             'remove_inheritdoc' => true,
         ],
-        'no_trailing_comma_in_singleline_array' => true,
+        'no_trailing_comma_in_singleline' => true,
         'no_unused_imports' => true,
         'no_whitespace_in_blank_line' => true,
         'object_operator_without_whitespace' => true,
