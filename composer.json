@@ -25,7 +25,7 @@
         "infection/infection": "^0.26.13",
         "phpstan/phpstan": "^1.8.8",
         "phpstan/phpstan-strict-rules": "^1.4.4",
-        "phpunit/phpunit": "^9.5.24",
+        "phpunit/phpunit": "^9.5.25",
         "vimeo/psalm": "^4.28.0"
     },
     "autoload": {
