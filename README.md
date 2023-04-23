@@ -17,7 +17,7 @@ This repository provides a starting point for other PHP projects.
 1. Update the `composer.json` data:
     * `name`
     * `description`
-    * `type` (in library)
+    * `type`
     * `keywords`
     * `require.php` (in project)
     * `autoload.psr-4` (the project namespace)
